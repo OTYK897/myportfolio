@@ -16,7 +16,7 @@ export default async function Page() {
 
   return (
     <div className="min-h-screen max-w-[1980px] mx-0 pr-5">
-      <header className="w-full flex items-end justify-between">
+      <header className="w-full flex md:items-end justify-between">
         <h1 className="hover:bg-zinc-300 transition duration-200 active:bg-white">
           <Link
             href="http://192.168.1.14:3000/"
@@ -24,8 +24,8 @@ export default async function Page() {
             <PageLogo />
           </Link>
         </h1>
-        <section className=" fixed top-5 right-5">
-          <nav className="flex gap-5 text-lg">
+        <section className="grid md:top-5 md:right-5 md:fixed">
+          <nav className="grid gap-5 text-lg md:flex">
             <NavMenu title="お問合せ" href="" icon={<CiMail size={24}/> } />
             <NavMenu title="instagram" href="" icon={<CiInstagram size={24}/> } />
             <NavMenu title="Facebook" href="" icon={<FaFacebook size={24}/>} />
