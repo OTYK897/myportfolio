@@ -18,5 +18,5 @@ export default function NumberCount({ number, duration }: Props) {
         return () => controls.stop()
     }, [])
 
-    return <motion.pre className="text-2xl text-zinc-700">{rounded}</motion.pre>
+    return <motion.pre className="text-xl text-zinc-700">{rounded}</motion.pre>
 }
