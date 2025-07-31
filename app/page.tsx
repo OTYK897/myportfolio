@@ -12,8 +12,8 @@ import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 
-export default async function Page() {
-  await new Promise((res) => setTimeout(res, 750));
+export default function Page() {
+
 
   return (
     <div className="min-h-screen max-w-[1980px] w-full mx-auto overflow-x-hidden pr-5">
