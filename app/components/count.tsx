@@ -16,7 +16,7 @@ export default function NumberCount({ number, duration }: Props) {
     useEffect(() => {
         const controls = animate(count, number, { duration: duration })
         return () => controls.stop()
-    }, [])
+    }, [count, duration, number])
 
     return <motion.pre className="text-xl text-zinc-700">{rounded}</motion.pre>
 }
