@@ -1,11 +1,13 @@
 import type { NextConfig } from "next";
+const isGithubPages = process.env.GITHUB_PAGES === 'true';
 
 const nextConfig: NextConfig = {
   /* config options here */
   transpilePackages: ['motion'],
-  // output: 'export', // 静的サイトとして出力
-  // basePath: '/myportfolio', // リポジトリ名を指定
-  // assetPrefix: '/myportfolio',
+    output: 'export', // 静的サイトとしてエクスポート
+    assetPrefix: isGithubPages ? '/myportfolio' : '',
+    basePath: isGithubPages ? '/myportfolio' : '',
+    trailingSlash: true,
 };
 module.exports = nextConfig;
 
