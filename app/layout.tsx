@@ -7,10 +7,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className=''
-      >
-        {children}
+      <body>
+        <div className="min-h-screen max-w-[1980px] mx-auto w-full overflow-x-hidden">
+          {children}
+        </div>
       </body>
     </html>
   );
